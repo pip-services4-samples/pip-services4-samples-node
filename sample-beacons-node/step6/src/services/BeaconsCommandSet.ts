@@ -11,8 +11,8 @@ import { IContext } from 'pip-services4-components-node';
 import { FilterParams } from 'pip-services4-data-node';
 import { PagingParams } from 'pip-services4-data-node';
 
-import { BeaconV1Schema } from '../../src/data/version1/BeaconV1Schema';
-import { IBeaconsService } from '../../src/services/IBeaconsService';
+import { BeaconV1Schema } from '../data/version1/BeaconV1Schema';
+import { IBeaconsService } from './IBeaconsService';
 
 export class BeaconsCommandSet extends CommandSet {
     private _service: IBeaconsService;

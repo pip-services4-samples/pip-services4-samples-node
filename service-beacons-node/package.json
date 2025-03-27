@@ -4,7 +4,8 @@
     "main": "./obj/src/index.js",
     "typings": "./obj/src/index.d.ts",
     "scripts": {
-      "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test"
+      "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test",
+      "start": "node ./bin/run"
     },
     "dependencies": {
       "pip-services4-commons-node": "^0.0.*",

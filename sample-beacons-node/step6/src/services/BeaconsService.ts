@@ -11,10 +11,10 @@ import { IdGenerator } from 'pip-services4-data-node';
 import { CommandSet } from 'pip-services4-rpc-node';
 import { ICommandable } from 'pip-services4-rpc-node';
 
-import { BeaconV1 } from '../../src/data/version1/BeaconV1';
-import { IBeaconsPersistence } from '../../src/persistence/IBeaconsPersistence';
+import { BeaconV1 } from '../data/version1/BeaconV1';
+import { IBeaconsPersistence } from '../persistence/IBeaconsPersistence';
 import { IBeaconsService } from './IBeaconsService';
-import { BeaconTypeV1 } from '../../src/data/version1/BeaconTypeV1';
+import { BeaconTypeV1 } from '../data/version1/BeaconTypeV1';
 import { BeaconsCommandSet } from './BeaconsCommandSet';
 
 export class BeaconsService implements IBeaconsService, IConfigurable, IReferenceable, ICommandable {

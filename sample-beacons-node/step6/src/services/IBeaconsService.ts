@@ -3,7 +3,7 @@ import { PagingParams } from 'pip-services4-data-node';
 import { DataPage } from 'pip-services4-data-node';
 import { IContext } from 'pip-services4-components-node';
 
-import { BeaconV1 } from '../../src/data/version1/BeaconV1';
+import { BeaconV1 } from '../data/version1/BeaconV1';
 
 export interface IBeaconsService {
     getBeacons(ctx: IContext, filter: FilterParams,
