@@ -79,7 +79,7 @@ class BeaconsPersistenceFixture {
             // Create items
             yield this.testCreateBeacons();
             // Get all beacons
-            let page = yield this._persistence.getPageByFilter(null, pip_services4_data_node_1.FilterParams.fromTuples('udis', '00001,00002,00003'), new pip_services4_data_node_2.PagingParams());
+            let page = yield this._persistence.getPageByFilter(null, new pip_services4_data_node_1.FilterParams(), new pip_services4_data_node_2.PagingParams());
             assert.isObject(page);
             assert.lengthOf(page.data, 3);
             let beacon1 = page.data[0];

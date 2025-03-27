@@ -15,7 +15,7 @@ const pip_services4_persistence_node_1 = require("pip-services4-persistence-node
 class BeaconsMemoryPersistence extends pip_services4_persistence_node_1.IdentifiableMemoryPersistence {
     constructor() {
         super();
-        this._maxPageSize = 1000;
+        this._maxPageSize = 100;
     }
     composeFilter(filter) {
         filter = filter || new pip_services4_data_node_1.FilterParams();

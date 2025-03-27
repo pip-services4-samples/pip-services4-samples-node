@@ -13,7 +13,7 @@ export class BeaconsMongoDbPersistence
 
     constructor() {
         super('beacons');
-        this._maxPageSize = 1000;
+        this._maxPageSize = 100;
     }
 
     private composeFilter(filter: FilterParams): any {

@@ -88,9 +88,7 @@ export class BeaconsPersistenceFixture {
         // Get all beacons
         let page = await this._persistence.getPageByFilter(
             null,
-            FilterParams.fromTuples(
-                'udis', '00001,00002,00003'
-            ),
+            new FilterParams(),
             new PagingParams()
         );
         assert.isObject(page);

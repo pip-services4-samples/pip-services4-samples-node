@@ -15,7 +15,7 @@ export class BeaconsMemoryPersistence
     constructor() {
         super();
 
-        this._maxPageSize = 1000;
+        this._maxPageSize = 100;
     }
 
     private composeFilter(filter: FilterParams): any {
